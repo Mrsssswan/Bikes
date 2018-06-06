@@ -1,0 +1,39 @@
+#centos7下mongodb安装配置
+1.本机下载好压缩包 使用sftp传输到服务器上
+2.解压缩 tar -zvxf mongodb-linux-x86_64-rhel70-3.6.5.gz
+3.将解压缩后的文件移动合适位置 mv mongodb-linux-x86_64-rhel70-3.6.5 /usr/local/mongondb
+4.进入mongodb目录里 创建两个文件夹 data 和logs 
+5.进入bin目录 创建  mongo.conf文件
+6.在mongo.conf里添加如下内容
+#数据库数据存放目录
+dbpath=/usr/local/mongondb/data
+#数据库日志存放目录
+logpath=/usr/local/mongondb/logs/mongpdb.log
+#以追加的方式记录日志
+logappend = true
+#端口号 默认为27017
+port=27017
+#启用日志文件，默认启用
+journal=true
+#这个选项可以过滤掉一些无用的日志信息，若需要调试使用请设置为false
+quiet=true
+#开启安全认证机制
+auth=true
+#以守护进程的方式运行，创建服务器进程 
+fork=true
+#mongodb所绑定的ip地址
+bind_ip = 127.0.0.1
+7.执行./mongod -f mongo.conf启动
+
+8.mongodb开启安全认证
+（1）进入mongodb，输入use admin
+（2）添加管理员 db.createUser(
+		 {
+		user:"root",
+		 pwd:'你的密码',
+		roles:['root']})
+（3）重新启动
+
+
+
+
