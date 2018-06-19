@@ -1,0 +1,5 @@
+#centos7下redis安装
+1.解压缩tar -zxvf redis-4.0.9.tar.gz 
+2.将解压缩后的文件移动合适位置mv redis-4.0.9 /usr/local/redis
+3.执行make编译（需要有gcc环境）
+4.make install
