@@ -3,3 +3,5 @@
 2.将解压缩后的文件移动合适位置mv redis-4.0.9 /usr/local/redis
 3.执行make编译（需要有gcc环境）
 4.make install
+5.安装编译好之后执行redis-server 启动服务
+6.redis-cli 进入客户端
