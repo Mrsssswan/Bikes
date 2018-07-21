@@ -1,3 +1,4 @@
+var myUtil = require("../../utils/myUtil.js")
 // pages/auth/auth.js
 Page({
 
@@ -62,5 +63,46 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+
+
+
+formSubmit: function(e) {
+
+  var status = myUtil.get("status");
+
+  var phoneNum = myUtil.get("phoneNum");
+
+  var username = e.detail.value.username
+
+  var idNum = e.detail.value.idNum
+
+  //发送手机号和验证码进行校验
+
+  wx.request({
+
+    url: "https://www.mrsssswan.club/auth.bike",
+    data: {
+
+      phoneNum: phoneNum,
+      username: username,
+      idNum:idNum,
+      status:3
+    },
+
+    method: "POST",
+
+    success: function (res) {
+
+      wx.navigateTo({
+
+        url: '../index/index'
+
+      });
+      getApp().globalData.status = 3
+      wx.setStorageSync("status", 3)
+    }
+
+  })
+}
 })

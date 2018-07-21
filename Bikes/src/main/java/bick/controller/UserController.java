@@ -36,4 +36,17 @@ public class UserController {
         }
         return flag;
     }
+
+    @PostMapping("/auth.bike")
+    @ResponseBody
+    public boolean auth(@RequestBody User user){
+        boolean flag = true;
+        try {
+            service.update(user);
+        }catch (Exception e){
+            flag = false;
+            e.printStackTrace();
+        }
+        return flag;
+    }
 }

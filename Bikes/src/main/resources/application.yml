@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: prod
+    active: dev
 #redis的连接信息
   redis:
     host: 127.0.0.1

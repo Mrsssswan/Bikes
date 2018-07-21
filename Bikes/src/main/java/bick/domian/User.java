@@ -1,6 +1,7 @@
 package bick.domian;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.aggregation.ArrayOperators;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -20,13 +21,14 @@ public class User {
     //身份证号
     private String idNum;
     //用户状态 0表示未注册，1没交押金 2表示实名认证了
-    private int status;
+    private Integer status;
 
-    public int getStatus() {
+
+    public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(Integer status) {
         this.status = status;
     }
 
