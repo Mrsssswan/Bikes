@@ -17,8 +17,8 @@ public class UserController {
         return  service.sendMsg(nationCode,phoneNum);
     }
 
+
     @PostMapping("/verify.bike")
-    @ResponseBody
     public Boolean verify(String phoneNum,String verifyCode){
 
         return service.verify(phoneNum,verifyCode);
@@ -36,7 +36,6 @@ public class UserController {
         }
         return flag;
     }
-
     @PostMapping("/auth.bike")
     @ResponseBody
     public boolean auth(@RequestBody User user){

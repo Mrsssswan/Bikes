@@ -8,6 +8,12 @@
           <view class="flag"> 开始用车</view>
         </view>
 
+<<<<<<< HEAD
+=======
+        <view class="pledgecont">
+        </view>
+
+>>>>>>> 2f63acb9794ac585e90c4b22c9a73d8693e45e85
         <form bindsubmit="formSubmit">
           <view class="weui-cells">
             <view class="weui-cell weui-cell_select">

@@ -1,7 +1,6 @@
 spring:
   profiles:
     active: dev
-#redis的连接信息
   redis:
     host: 127.0.0.1
     port: 6379

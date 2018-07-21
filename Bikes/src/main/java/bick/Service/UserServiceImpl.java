@@ -11,10 +11,8 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
-
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
@@ -58,6 +56,7 @@ public class UserServiceImpl implements UserService {
             flag = true;
         }
         return flag;
+
     }
 
     @Override

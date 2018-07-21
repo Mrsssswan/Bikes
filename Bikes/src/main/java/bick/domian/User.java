@@ -1,7 +1,6 @@
 package bick.domian;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.aggregation.ArrayOperators;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -28,9 +27,7 @@ public class User {
         return status;
     }
 
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
+    public void setStatus(Integer status) {}
 
     public Double getDeposit() {
         return deposit;

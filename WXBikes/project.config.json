@@ -1,7 +1,11 @@
 {
 	"description": "项目配置文件。",
 	"setting": {
+<<<<<<< HEAD
 		"urlCheck": true,
+=======
+		"urlCheck": false,
+>>>>>>> 2f63acb9794ac585e90c4b22c9a73d8693e45e85
 		"es6": true,
 		"postcss": true,
 		"minified": true,

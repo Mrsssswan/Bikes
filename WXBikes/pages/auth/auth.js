@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 var myUtil = require("../../utils/myUtil.js")
+=======
+>>>>>>> 2f63acb9794ac585e90c4b22c9a73d8693e45e85
 // pages/auth/auth.js
 Page({
 
@@ -63,6 +66,7 @@ Page({
    */
   onShareAppMessage: function () {
   
+<<<<<<< HEAD
   },
 
 
@@ -105,4 +109,7 @@ formSubmit: function(e) {
 
   })
 }
+=======
+  }
+>>>>>>> 2f63acb9794ac585e90c4b22c9a73d8693e45e85
 })

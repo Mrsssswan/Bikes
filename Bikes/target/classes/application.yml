@@ -1,6 +1,10 @@
 spring:
   profiles:
+<<<<<<< HEAD
     active: dev
+=======
+    active: prod
+>>>>>>> 2f63acb9794ac585e90c4b22c9a73d8693e45e85
 #redis的连接信息
   redis:
     host: 127.0.0.1
