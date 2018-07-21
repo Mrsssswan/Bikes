@@ -1,6 +1,6 @@
-/Bikes/target/
-/Bikes/out/
-/Bikes/!.mvn/wrapper/maven-wrapper.jar
+/target/
+/out/
+!.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
 
@@ -22,9 +22,9 @@
 
 ### IntelliJ IDEA ###
 
-/Bikes/.idea
+.idea
 
-/Bikes*.iws
+*.iws
 
 *.iml
 
